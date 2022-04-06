@@ -1,0 +1,101 @@
+2021-10-26 09:25:29,646 - test_run.py[line:33] - INFO: ***** 开始执行测试用例，开始时间为：2021-10-26 09:25:29 *****
+2021-10-26 09:25:29,676 - test_run.py[line:70] - INFO: 正在执行密码错误用例
+2021-10-26 09:25:29,676 - requestsutil.py[line:13] - INFO: 请求的url为http://192.168.11.129/api/admin/login,类型为<class 'str'>
+2021-10-26 09:25:29,676 - requestsutil.py[line:15] - INFO: 请求的method为post,类型为<class 'str'>
+2021-10-26 09:25:29,676 - requestsutil.py[line:17] - INFO: 请求的data为{'userName': 'admin', 'password': 123456, 'https': False, 'key': 1598188173501},类型为<class 'dict'>
+2021-10-26 09:25:29,676 - requestsutil.py[line:19] - INFO: 请求的headers为{'Content-Type': 'application/json'},类型为<class 'dict'>
+2021-10-26 09:25:29,676 - requestsutil.py[line:21] - INFO: 请求的cookies为{},类型为<class 'dict'>
+2021-10-26 09:25:29,727 - test_run.py[line:74] - INFO: 用例执行成功，请求的结果为{'code': 200, 'body': {'message': '用户名或密码错误', 'error': 1}, 'cookies': {}}
+2021-10-26 09:25:29,727 - test_run.py[line:147] - INFO: 用例断言成功
+2021-10-26 09:25:29,787 - readmysql.py[line:45] - DEBUG: insert into `test_result_record`(case_id,times,response,result) values ('1','2021-10-26 09:25:29','{"code": 200, "body": {"message": "用户名或密码错误", "error": 1}, "cookies": {}}','True')
+2021-10-26 09:25:29,796 - test_run.py[line:70] - INFO: 正在执行不携带密码参数用例
+2021-10-26 09:25:29,796 - requestsutil.py[line:13] - INFO: 请求的url为http://192.168.11.129/api/admin/login,类型为<class 'str'>
+2021-10-26 09:25:29,796 - requestsutil.py[line:15] - INFO: 请求的method为post,类型为<class 'str'>
+2021-10-26 09:25:29,796 - requestsutil.py[line:17] - INFO: 请求的data为{'userName': 'admin', 'https': False, 'key': 1598188173501},类型为<class 'dict'>
+2021-10-26 09:25:29,796 - requestsutil.py[line:19] - INFO: 请求的headers为{'Content-Type': 'application/json'},类型为<class 'dict'>
+2021-10-26 09:25:29,796 - requestsutil.py[line:21] - INFO: 请求的cookies为{},类型为<class 'dict'>
+2021-10-26 09:25:29,817 - test_run.py[line:74] - INFO: 用例执行成功，请求的结果为{'code': 200, 'body': {'message': '用户名和密码都不能为空', 'error': 1}, 'cookies': {}}
+2021-10-26 09:25:29,817 - test_run.py[line:147] - INFO: 用例断言成功
+2021-10-26 09:25:29,880 - readmysql.py[line:45] - DEBUG: insert into `test_result_record`(case_id,times,response,result) values ('2','2021-10-26 09:25:29','{"code": 200, "body": {"message": "用户名和密码都不能为空", "error": 1}, "cookies": {}}','True')
+2021-10-26 09:25:29,886 - test_run.py[line:70] - INFO: 正在执行用户名错误用例
+2021-10-26 09:25:29,886 - requestsutil.py[line:13] - INFO: 请求的url为http://192.168.11.129/api/admin/login,类型为<class 'str'>
+2021-10-26 09:25:29,886 - requestsutil.py[line:15] - INFO: 请求的method为post,类型为<class 'str'>
+2021-10-26 09:25:29,886 - requestsutil.py[line:17] - INFO: 请求的data为{'userName': 'adminadminadminadmin', 'password': 'ca72de92e7e1767aefe5853a282836e7', 'https': False, 'key': 1598188173501},类型为<class 'dict'>
+2021-10-26 09:25:29,887 - requestsutil.py[line:19] - INFO: 请求的headers为{'Content-Type': 'application/json'},类型为<class 'dict'>
+2021-10-26 09:25:29,887 - requestsutil.py[line:21] - INFO: 请求的cookies为{},类型为<class 'dict'>
+2021-10-26 09:25:29,923 - test_run.py[line:74] - INFO: 用例执行成功，请求的结果为{'code': 200, 'body': {'message': '用户名或密码错误', 'error': 1}, 'cookies': {}}
+2021-10-26 09:25:29,923 - test_run.py[line:147] - INFO: 用例断言成功
+2021-10-26 09:25:29,940 - readmysql.py[line:45] - DEBUG: insert into `test_result_record`(case_id,times,response,result) values ('3','2021-10-26 09:25:29','{"code": 200, "body": {"message": "用户名或密码错误", "error": 1}, "cookies": {}}','True')
+2021-10-26 09:25:29,952 - test_run.py[line:70] - INFO: 正在执行用户名为非字符串类型用例
+2021-10-26 09:25:29,953 - requestsutil.py[line:13] - INFO: 请求的url为http://192.168.11.129/api/admin/login,类型为<class 'str'>
+2021-10-26 09:25:29,953 - requestsutil.py[line:15] - INFO: 请求的method为post,类型为<class 'str'>
+2021-10-26 09:25:29,953 - requestsutil.py[line:17] - INFO: 请求的data为{'userName': 123456, 'password': 'ca72de92e7e1767aefe5853a282836e7', 'https': False, 'key': 1598188173501},类型为<class 'dict'>
+2021-10-26 09:25:29,953 - requestsutil.py[line:19] - INFO: 请求的headers为{'Content-Type': 'application/json'},类型为<class 'dict'>
+2021-10-26 09:25:29,953 - requestsutil.py[line:21] - INFO: 请求的cookies为{},类型为<class 'dict'>
+2021-10-26 09:25:29,981 - test_run.py[line:74] - INFO: 用例执行成功，请求的结果为{'code': 200, 'body': {'message': '用户名或密码错误', 'error': 1}, 'cookies': {}}
+2021-10-26 09:25:29,981 - test_run.py[line:147] - INFO: 用例断言成功
+2021-10-26 09:25:30,012 - readmysql.py[line:45] - DEBUG: insert into `test_result_record`(case_id,times,response,result) values ('4','2021-10-26 09:25:29','{"code": 200, "body": {"message": "用户名或密码错误", "error": 1}, "cookies": {}}','True')
+2021-10-26 09:25:30,021 - test_run.py[line:70] - INFO: 正在执行不携带用户名参数用例
+2021-10-26 09:25:30,021 - requestsutil.py[line:13] - INFO: 请求的url为http://192.168.11.129/api/admin/login,类型为<class 'str'>
+2021-10-26 09:25:30,021 - requestsutil.py[line:15] - INFO: 请求的method为post,类型为<class 'str'>
+2021-10-26 09:25:30,022 - requestsutil.py[line:17] - INFO: 请求的data为{'password': 'ca72de92e7e1767aefe5853a282836e7', 'https': False, 'key': 1598188173501},类型为<class 'dict'>
+2021-10-26 09:25:30,022 - requestsutil.py[line:19] - INFO: 请求的headers为{'Content-Type': 'application/json'},类型为<class 'dict'>
+2021-10-26 09:25:30,022 - requestsutil.py[line:21] - INFO: 请求的cookies为{},类型为<class 'dict'>
+2021-10-26 09:25:30,045 - test_run.py[line:74] - INFO: 用例执行成功，请求的结果为{'code': 200, 'body': {'message': '用户名和密码都不能为空', 'error': 1}, 'cookies': {}}
+2021-10-26 09:25:30,045 - test_run.py[line:147] - INFO: 用例断言成功
+2021-10-26 09:25:30,076 - readmysql.py[line:45] - DEBUG: insert into `test_result_record`(case_id,times,response,result) values ('5','2021-10-26 09:25:30','{"code": 200, "body": {"message": "用户名和密码都不能为空", "error": 1}, "cookies": {}}','True')
+2021-10-26 09:25:30,086 - test_run.py[line:70] - INFO: 正在执行用户名为空字符串用例
+2021-10-26 09:25:30,086 - requestsutil.py[line:13] - INFO: 请求的url为http://192.168.11.129/api/admin/login,类型为<class 'str'>
+2021-10-26 09:25:30,087 - requestsutil.py[line:15] - INFO: 请求的method为post,类型为<class 'str'>
+2021-10-26 09:25:30,087 - requestsutil.py[line:17] - INFO: 请求的data为{'userName': '', 'password': 'ca72de92e7e1767aefe5853a282836e7', 'https': False, 'key': 1598188173501},类型为<class 'dict'>
+2021-10-26 09:25:30,087 - requestsutil.py[line:19] - INFO: 请求的headers为{'Content-Type': 'application/json'},类型为<class 'dict'>
+2021-10-26 09:25:30,087 - requestsutil.py[line:21] - INFO: 请求的cookies为{},类型为<class 'dict'>
+2021-10-26 09:25:30,100 - test_run.py[line:74] - INFO: 用例执行成功，请求的结果为{'code': 200, 'body': {'message': '用户名和密码都不能为空', 'error': 1}, 'cookies': {}}
+2021-10-26 09:25:30,100 - test_run.py[line:147] - INFO: 用例断言成功
+2021-10-26 09:25:30,146 - readmysql.py[line:45] - DEBUG: insert into `test_result_record`(case_id,times,response,result) values ('6','2021-10-26 09:25:30','{"code": 200, "body": {"message": "用户名和密码都不能为空", "error": 1}, "cookies": {}}','True')
+2021-10-26 09:25:30,156 - test_run.py[line:70] - INFO: 正在执行用户名和密码正确用例
+2021-10-26 09:25:30,156 - requestsutil.py[line:13] - INFO: 请求的url为http://192.168.11.129/api/admin/login,类型为<class 'str'>
+2021-10-26 09:25:30,156 - requestsutil.py[line:15] - INFO: 请求的method为post,类型为<class 'str'>
+2021-10-26 09:25:30,156 - requestsutil.py[line:17] - INFO: 请求的data为{'userName': 'admin', 'password': 'ca72de92e7e1767aefe5853a282836e7', 'https': False, 'key': 1598188173501},类型为<class 'dict'>
+2021-10-26 09:25:30,156 - requestsutil.py[line:19] - INFO: 请求的headers为{'Content-Type': 'application/json'},类型为<class 'dict'>
+2021-10-26 09:25:30,156 - requestsutil.py[line:21] - INFO: 请求的cookies为{},类型为<class 'dict'>
+2021-10-26 09:25:30,171 - test_run.py[line:74] - INFO: 用例执行成功，请求的结果为{'code': 200, 'body': {'message': None, 'error': 0}, 'cookies': {'admin-token': '1#70356834636F7866623775656D764368757945326D3267734162376F724544344F36777136635052474733623963494D6E414E6762485277623459573761436D377274434E55556D4D6B304336664478496D7846356B7166566A687A4671326F356E7948304B50316F64413D'}}
+2021-10-26 09:25:30,171 - test_run.py[line:147] - INFO: 用例断言成功
+2021-10-26 09:25:30,209 - readmysql.py[line:45] - DEBUG: insert into `test_result_record`(case_id,times,response,result) values ('7','2021-10-26 09:25:30','{"code": 200, "body": {"message": null, "error": 0}, "cookies": {"admin-token": "1#70356834636F7866623775656D764368757945326D3267734162376F724544344F36777136635052474733623963494D6E414E6762485277623459573761436D377274434E55556D4D6B304336664478496D7846356B7166566A687A4671326F356E7948304B50316F64413D"}}','True')
+2021-10-26 09:25:30,220 - test_run.py[line:70] - INFO: 正在执行发布文章用例
+2021-10-26 09:25:30,220 - requestsutil.py[line:13] - INFO: 请求的url为http://192.168.11.129/api/admin/article/create,类型为<class 'str'>
+2021-10-26 09:25:30,220 - requestsutil.py[line:15] - INFO: 请求的method为post,类型为<class 'str'>
+2021-10-26 09:25:30,220 - requestsutil.py[line:17] - INFO: 请求的data为{'id': None, 'editorType': 'markdown', 'title': '付出', 'alias': '付出', 'thumbnail': None, 'typeId': '1', 'keywords': None, 'digest': None, 'canComment': False, 'recommended': False, 'privacy': False, 'content': '<p>付出</p>\n', 'markdown': '付出', 'rubbish': False},类型为<class 'dict'>
+2021-10-26 09:25:30,220 - requestsutil.py[line:19] - INFO: 请求的headers为{'Content-Type': 'application/json'},类型为<class 'dict'>
+2021-10-26 09:25:30,220 - requestsutil.py[line:21] - INFO: 请求的cookies为{'admin-token': '1#70356834636F7866623775656D764368757945326D3267734162376F724544344F36777136635052474733623963494D6E414E6762485277623459573761436D377274434E55556D4D6B304336664478496D7846356B7166566A687A4671326F356E7948304B50316F64413D'},类型为<class 'dict'>
+2021-10-26 09:25:31,590 - test_run.py[line:74] - INFO: 用例执行成功，请求的结果为{'code': 200, 'body': {'thumbnail': None, 'digest': '<p>付出</p>', 'alias': '付出', 'id': 1, 'message': None, 'error': 0}, 'cookies': {'admin-token': '1#70356834636F7866623775656D764368757945326D37746B35356134575A7066454B63424B714970366979367A644D4E6D7779794530346D58685541452F4C586D485A7A545648726A4C6B66586578472B6E5357685A54597A333937442F7731454A6432566F522B7737593D'}}
+2021-10-26 09:25:31,590 - test_run.py[line:147] - INFO: 用例断言成功
+2021-10-26 09:25:31,656 - readmysql.py[line:45] - DEBUG: insert into `test_result_record`(case_id,times,response,result) values ('8','2021-10-26 09:25:31','{"code": 200, "body": {"thumbnail": null, "digest": "<p>付出</p>", "alias": "付出", "id": 1, "message": null, "error": 0}, "cookies": {"admin-token": "1#70356834636F7866623775656D764368757945326D37746B35356134575A7066454B63424B714970366979367A644D4E6D7779794530346D58685541452F4C586D485A7A545648726A4C6B66586578472B6E5357685A54597A333937442F7731454A6432566F522B7737593D"}}','True')
+2021-10-26 09:25:31,664 - test_run.py[line:70] - INFO: 正在执行修改文章用例
+2021-10-26 09:25:31,665 - requestsutil.py[line:13] - INFO: 请求的url为http://192.168.11.129/api/admin/article/update,类型为<class 'str'>
+2021-10-26 09:25:31,665 - requestsutil.py[line:15] - INFO: 请求的method为post,类型为<class 'str'>
+2021-10-26 09:25:31,665 - requestsutil.py[line:17] - INFO: 请求的data为{'id': '1', 'editorType': 'markdown', 'title': '付出才能杰出', 'alias': '付出', 'thumbnail': None, 'typeId': '1', 'keywords': None, 'digest': '<p>付出</p>', 'canComment': False, 'recommended': False, 'privacy': False, 'content': '<p>付出</p>\n', 'markdown': '付出', 'rubbish': False},类型为<class 'dict'>
+2021-10-26 09:25:31,665 - requestsutil.py[line:19] - INFO: 请求的headers为{'Content-Type': 'application/json'},类型为<class 'dict'>
+2021-10-26 09:25:31,665 - requestsutil.py[line:21] - INFO: 请求的cookies为{'admin-token': '1#70356834636F7866623775656D764368757945326D3267734162376F724544344F36777136635052474733623963494D6E414E6762485277623459573761436D377274434E55556D4D6B304336664478496D7846356B7166566A687A4671326F356E7948304B50316F64413D'},类型为<class 'dict'>
+2021-10-26 09:25:31,841 - test_run.py[line:74] - INFO: 用例执行成功，请求的结果为{'code': 200, 'body': {'thumbnail': None, 'digest': '<p>付出</p>', 'alias': '付出', 'id': 1, 'message': None, 'error': 0}, 'cookies': {'admin-token': '1#70356834636F7866623775656D764368757945326D36585559744B5455392F47387048576B77684A796D534A707A30576C626D4F546C5A384F314A314D77574C71695365686D545047486D456D6D796F66537944436F4C43774D4F50684375484136424B756637657039773D'}}
+2021-10-26 09:25:31,841 - test_run.py[line:147] - INFO: 用例断言成功
+2021-10-26 09:25:31,873 - readmysql.py[line:45] - DEBUG: insert into `test_result_record`(case_id,times,response,result) values ('9','2021-10-26 09:25:31','{"code": 200, "body": {"thumbnail": null, "digest": "<p>付出</p>", "alias": "付出", "id": 1, "message": null, "error": 0}, "cookies": {"admin-token": "1#70356834636F7866623775656D764368757945326D36585559744B5455392F47387048576B77684A796D534A707A30576C626D4F546C5A384F314A314D77574C71695365686D545047486D456D6D796F66537944436F4C43774D4F50684375484136424B756637657039773D"}}','True')
+2021-10-26 09:25:31,885 - test_run.py[line:70] - INFO: 正在执行删除文章用例
+2021-10-26 09:25:31,885 - requestsutil.py[line:13] - INFO: 请求的url为http://192.168.11.129/api/admin/article/delete,类型为<class 'str'>
+2021-10-26 09:25:31,885 - requestsutil.py[line:15] - INFO: 请求的method为post,类型为<class 'str'>
+2021-10-26 09:25:31,885 - requestsutil.py[line:17] - INFO: 请求的data为{'oper': 'del', 'id': '1'},类型为<class 'dict'>
+2021-10-26 09:25:31,885 - requestsutil.py[line:19] - INFO: 请求的headers为{'Content-Type': 'application/x-www-form-urlencoded'},类型为<class 'dict'>
+2021-10-26 09:25:31,885 - requestsutil.py[line:21] - INFO: 请求的cookies为{'admin-token': '1#70356834636F7866623775656D764368757945326D3267734162376F724544344F36777136635052474733623963494D6E414E6762485277623459573761436D377274434E55556D4D6B304336664478496D7846356B7166566A687A4671326F356E7948304B50316F64413D'},类型为<class 'dict'>
+2021-10-26 09:25:31,994 - test_run.py[line:74] - INFO: 用例执行成功，请求的结果为{'code': 200, 'body': {'message': None, 'error': 0, 'delete': True}, 'cookies': {'admin-token': '1#70356834636F7866623775656D764368757945326D335277647364457763707A33392F32716E30587748436C52764B4D4541507141374D72435047546769483839484B6A3130317A7A564563776C44527A5252587A644F68555975427872636338656539325A74324459453D'}}
+2021-10-26 09:25:31,994 - test_run.py[line:147] - INFO: 用例断言成功
+2021-10-26 09:25:32,045 - readmysql.py[line:45] - DEBUG: insert into `test_result_record`(case_id,times,response,result) values ('10','2021-10-26 09:25:31','{"code": 200, "body": {"message": null, "error": 0, "delete": true}, "cookies": {"admin-token": "1#70356834636F7866623775656D764368757945326D335277647364457763707A33392F32716E30587748436C52764B4D4541507141374D72435047546769483839484B6A3130317A7A564563776C44527A5252587A644F68555975427872636338656539325A74324459453D"}}','True')
+2021-10-26 09:25:32,065 - test_run.py[line:70] - INFO: 正在执行查询文章用例
+2021-10-26 09:25:32,065 - requestsutil.py[line:13] - INFO: 请求的url为http://192.168.11.129/api/admin/article?keywords=付出才能杰出&_search=false&nd=1598429806679&rows=10&page=1&sidx=&sord=asc,类型为<class 'str'>
+2021-10-26 09:25:32,065 - requestsutil.py[line:15] - INFO: 请求的method为get,类型为<class 'str'>
+2021-10-26 09:25:32,065 - requestsutil.py[line:17] - INFO: 请求的data为{},类型为<class 'dict'>
+2021-10-26 09:25:32,065 - requestsutil.py[line:19] - INFO: 请求的headers为{'Content-Type': 'application/x-www-form-urlencoded'},类型为<class 'dict'>
+2021-10-26 09:25:32,065 - requestsutil.py[line:21] - INFO: 请求的cookies为{'admin-token': '1#70356834636F7866623775656D764368757945326D3267734162376F724544344F36777136635052474733623963494D6E414E6762485277623459573761436D377274434E55556D4D6B304336664478496D7846356B7166566A687A4671326F356E7948304B50316F64413D'},类型为<class 'dict'>
+2021-10-26 09:25:32,193 - test_run.py[line:74] - INFO: 用例执行成功，请求的结果为{'code': 200, 'body': {'total': 0, 'records': 0, 'page': 0, 'rows': [], 'message': None, 'error': 0}, 'cookies': {'admin-token': '1#70356834636F7866623775656D764368757945326D772B6631464E594E4845546E576C734B746B6F32784D395849384A695447755A3552746F5450697869516232742F347066354A7967732F5436496C364572585A4E6649784B49484955654749776C502B586C66326F383D'}}
+2021-10-26 09:25:32,194 - test_run.py[line:147] - INFO: 用例断言成功
+2021-10-26 09:25:32,229 - readmysql.py[line:45] - DEBUG: insert into `test_result_record`(case_id,times,response,result) values ('11','2021-10-26 09:25:32','{"code": 200, "body": {"total": 0, "records": 0, "page": 0, "rows": [], "message": null, "error": 0}, "cookies": {"admin-token": "1#70356834636F7866623775656D764368757945326D772B6631464E594E4845546E576C734B746B6F32784D395849384A695447755A3552746F5450697869516232742F347066354A7967732F5436496C364572585A4E6649784B49484955654749776C502B586C66326F383D"}}','True')
+2021-10-26 09:25:32,230 - test_run.py[line:38] - INFO: ***** 执行用例完成，完成时间为：2021-10-26 09:25:29 *****
